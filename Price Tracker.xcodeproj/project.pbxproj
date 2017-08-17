@@ -12,6 +12,9 @@
 		F55606C51F45DA4800AEEC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55606C31F45DA4800AEEC4C /* Main.storyboard */; };
 		F55606C71F45DA4800AEEC4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55606C61F45DA4800AEEC4C /* Assets.xcassets */; };
 		F55606CA1F45DA4800AEEC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55606C81F45DA4800AEEC4C /* LaunchScreen.storyboard */; };
+		F55606D21F45E34600AEEC4C /* UIProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55606D11F45E34600AEEC4C /* UIProductsTableViewController.swift */; };
+		F55606D41F45E5F600AEEC4C /* NewProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55606D31F45E5F600AEEC4C /* NewProductTableViewController.swift */; };
+		F55606D61F45E63F00AEEC4C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55606D51F45E63F00AEEC4C /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F55606C61F45DA4800AEEC4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F55606C91F45DA4800AEEC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F55606CB1F45DA4800AEEC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F55606D11F45E34600AEEC4C /* UIProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProductsTableViewController.swift; sourceTree = "<group>"; };
+		F55606D31F45E5F600AEEC4C /* NewProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductTableViewController.swift; sourceTree = "<group>"; };
+		F55606D51F45E63F00AEEC4C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				F55606BF1F45DA4800AEEC4C /* AppDelegate.swift */,
+				F55606D51F45E63F00AEEC4C /* File.swift */,
 				F55606C11F45DA4800AEEC4C /* ViewController.swift */,
 				F55606C31F45DA4800AEEC4C /* Main.storyboard */,
+				F55606D31F45E5F600AEEC4C /* NewProductTableViewController.swift */,
+				F55606D11F45E34600AEEC4C /* UIProductsTableViewController.swift */,
 				F55606C61F45DA4800AEEC4C /* Assets.xcassets */,
 				F55606C81F45DA4800AEEC4C /* LaunchScreen.storyboard */,
 				F55606CB1F45DA4800AEEC4C /* Info.plist */,
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					F55606BB1F45DA4800AEEC4C = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -135,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55606D61F45E63F00AEEC4C /* File.swift in Sources */,
+				F55606D41F45E5F600AEEC4C /* NewProductTableViewController.swift in Sources */,
 				F55606C21F45DA4800AEEC4C /* ViewController.swift in Sources */,
 				F55606C01F45DA4800AEEC4C /* AppDelegate.swift in Sources */,
+				F55606D21F45E34600AEEC4C /* UIProductsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,11 +286,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 74464429BD;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XDH2NZC23D;
 				INFOPLIST_FILE = "Price Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "testing.Price-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,11 +303,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 74464429BD;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XDH2NZC23D;
 				INFOPLIST_FILE = "Price Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "testing.Price-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
